@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naiteek &mdash; builder</title>
+  <meta name="description" content="Naiteek &mdash; electronics engineer and builder. Hardware, software, and the case for why they matter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.dataset.theme=localStorage.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")</script>
+</head>
+<body>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">NAITEEK<sup>&reg;</sup></a>
+    <nav aria-label="Site">
+      <a href="index.html" class="active" aria-current="page">home</a>
+      <a href="work.html">work</a>
+      <a href="certs.html">certs</a>
+      <a href="about.html">about</a>
+      <a href="resume.html">resume</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">dark</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="cover">
+      <div class="cover-text">
+        <p class="cat-no">naiteek &middot; electronics engineer &middot; builder</p>
+        <h1>I build the thing,<br>then <span class="hl">make the case</span> for it.</h1>
+        <p class="cover-sub">Trained in electronics, fluent in code, comfortable in front of
+          the people who decide. Most of my work lives in the gap between building
+          something and explaining why it matters.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="work.html">see the work &rarr;</a>
+          <a class="btn" href="resume.html">resume</a>
+          <a class="btn" href="mailto:naiteekchoksi@gmail.com">say hi</a>
+        </div>
+      </div>
+      <div class="cover-photo">
+        <img src="images/profile.png" alt="Naiteek" width="280">
+        <p class="cover-photo-note">always curious, occasionally right</p>
+      </div>
+    </section>
+
+    <section class="dept">
+      <header class="dept-head">
+        <span class="dept-no">recent work</span>
+        <h2>A few things I've made</h2>
+        <p class="dept-tag">all of it in <a href="work.html">work</a>.</p>
+      </header>
+      <div class="proof-grid">
+        <a class="proof" href="work.html">
+          <span class="proof-kicker">software &middot; self-built</span>
+          <p class="proof-title">Impulse IDE</p>
+          <p class="proof-label">An AI-powered desktop IDE for Arduino and IoT &mdash; built because
+            the existing tools slowed my hardware down.</p>
+        </a>
+        <a class="proof" href="work.html">
+          <span class="proof-kicker">software &middot; live</span>
+          <p class="proof-title">Game of Codes</p>
+          <p class="proof-label">A browser game that turns learning C++ into a mission you
+            write real code to finish.</p>
+        </a>
+        <a class="proof" href="work.html">
+          <span class="proof-kicker">hardware</span>
+          <p class="proof-title">Smart SOS Helmet</p>
+          <p class="proof-label">A safety helmet with a built-in call for help &mdash; and the
+            project that made me build Impulse.</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-small">
+    <div class="footer-row">
+      <span>&copy; 2026 Naiteek &middot; built by hand, no template</span>
+      <span>currently reading: <em>The Almanack of Naval Ravikant</em></span>
+      <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

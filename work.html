@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Naiteek</title>
+  <meta name="description" content="Projects: Impulse IDE, Game of Codes, NudgeUpp, and the Smart SOS Helmet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.dataset.theme=localStorage.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")</script>
+</head>
+<body>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">NAITEEK<sup>®</sup></a>
+    <nav aria-label="Site">
+      <a href="index.html">home</a>
+      <a href="work.html" class="active" aria-current="page">work</a>
+      <a href="certs.html">certs</a>
+      <a href="about.html">about</a>
+      <a href="resume.html">resume</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">dark</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="dept page-top">
+      <header class="dept-head">
+        <span class="dept-no">work</span>
+        <h2>Things I've built</h2>
+        <p class="dept-tag">the best one is myself.</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filter work">
+        <button class="filter active" data-filter="all">all</button>
+        <button class="filter" data-filter="software">software</button>
+        <button class="filter" data-filter="hardware">hardware</button>
+        <button class="filter" data-filter="freelance">freelance</button>
+        <button class="filter" data-filter="ventures">ventures</button>
+      </div>
+
+      <div class="cs-list" id="work-grid">
+
+        <article class="cs" data-tags="software hardware">
+          <div class="cs-media">
+            <img class="shot contain" loading="lazy" decoding="async" src="images/impulse.png" alt="Impulse IDE" onerror="this.remove()">
+            <span class="media-note">drop images/impulse.png</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">software · self-built</span>
+              <a class="tag-pill live" href="https://github.com/nate1029/Impulse" target="_blank" rel="noopener">github ↗</a>
+            </div>
+            <h3>Impulse IDE</h3>
+            <p>Most hardware IDEs treat AI as an afterthought. Impulse is built the other way
+              around &mdash; an AI agent sits at the core, bridging the gap between your code
+              and the hardware directly. Compile, upload, and serial monitor in one place,
+              with an error-memory system that learns from past failures. I built it because
+              my own projects kept getting slowed down by tools that weren&rsquo;t built for
+              this.</p>
+            <ul class="chips"><li>Electron</li><li>JavaScript</li><li>Arduino CLI</li><li>AI</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="software">
+          <div class="cs-media">
+            <img class="shot" loading="lazy" decoding="async" src="images/gameofcodes.png" alt="Game of Codes" onerror="this.remove()">
+            <span class="media-note">drop images/gameofcodes.png</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">software · live</span>
+              <a class="tag-pill live" href="https://www.gameofcodes.io/" target="_blank" rel="noopener">visit ↗</a>
+            </div>
+            <h3>Game of Codes</h3>
+            <p>A game that teaches kids to code by making code the actual mechanic — not a
+              lesson, not a tutorial, just a story you can only move forward by writing real
+              logic. Built for the age where attention is the scarce resource.</p>
+            <ul class="chips"><li>C++</li><li>web</li><li>game</li><li>edtech</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="freelance">
+          <div class="cs-media">
+            <img class="shot contain" loading="lazy" decoding="async" src="images/nudgeupp.png" alt="NudgeUpp" onerror="this.remove()">
+            <span class="media-note">drop images/nudgeupp.png</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">freelance · app</span>
+              <span class="tag-pill">play store link coming</span>
+            </div>
+            <h3>NudgeUpp</h3>
+            <p>A posture-tracking app that monitors how you sit and stand throughout the day —
+              built to fix text neck before it becomes a spine problem. Your phone already
+              knows you're slouching. Now it tells you.</p>
+            <ul class="chips"><li>mobile</li><li>health</li><li>freelance</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="hardware">
+          <div class="cs-media">
+            <img class="shot" loading="lazy" decoding="async" src="images/sos-helmet.jpeg" alt="Smart SOS Helmet" onerror="this.remove()">
+            <span class="media-note">drop images/sos-helmet.jpeg</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">hardware · embedded</span>
+              <span class="tag-pill">confirm the details</span>
+            </div>
+            <h3>Smart SOS Helmet</h3>
+            <p>A crash-detection helmet with a companion app that handles GPS and emergency
+              calls. MPU6050 reads the impact; a buzzer fires for 5 seconds giving the rider
+              a pushbutton window to cancel a false alarm — if no one presses it, the ESP
+              confirms the crash and sends SOS automatically. A hard hat for genuinely hard
+              problems, and exactly why Impulse exists.</p>
+            <ul class="chips"><li>hardware</li><li>embedded</li><li>MPU6050</li><li>IoT</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="ventures">
+          <div class="cs-media">
+            <img class="shot contain" loading="lazy" decoding="async" src="images/nodoubt.png" alt="No Doubt podcast" onerror="this.remove()">
+            <span class="media-note">drop images/nodoubt.png</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">ventures · podcast</span>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://youtube.com/@nodoubtspodcast" target="_blank" rel="noopener">youtube ↗</a>
+                <a class="tag-pill live" href="https://www.instagram.com/no.doubt_the.podcast" target="_blank" rel="noopener">instagram ↗</a>
+              </span>
+            </div>
+            <h3>No Doubt — the podcast</h3>
+            <p>Conversations that connect people across the business ecosystem — the belief
+              being: the more people you bring into the room, the more others are inspired to
+              chase their own thing.</p>
+            <ul class="chips"><li>podcast</li><li>hosting</li><li>audio + video</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="ventures">
+          <div class="cs-media">
+            <img class="shot" loading="lazy" decoding="async" src="images/metherium.png" alt="Metherium" onerror="this.remove()">
+            <span class="media-note">drop images/metherium.png</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">ventures · brand</span>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://metherium.studio/" target="_blank" rel="noopener">visit ↗</a>
+                <a class="tag-pill live" href="https://www.instagram.com/metherium_official/" target="_blank" rel="noopener">instagram ↗</a>
+              </span>
+            </div>
+            <h3>Metherium</h3>
+            <p>A design and branding studio that helps brands build real connection with their
+              audience — identities and visuals that market, not just look good in a mockup.
+              Stickers are one way in: physical, shareable, and impossible to ignore.</p>
+            <ul class="chips"><li>branding</li><li>design</li><li>ecommerce</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-small">
+    <div class="footer-row">
+      <span>© 2026 Naiteek · built by hand, no template</span>
+      <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

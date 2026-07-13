@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naiteek — engineer, builder, broadcaster</title>
+  <meta name="description" content="Naiteek is an electronics engineer, freelance builder, and podcast host. A portfolio made of 25,000 particles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#top">NAITEEK <span class="rev">· REV 2026-B</span></a>
+    <nav aria-label="Sections">
+      <a href="#about">about</a>
+      <a href="#freelance">freelance</a>
+      <a href="#electronics">electronics</a>
+      <a href="#podcast">podcast</a>
+      <a href="#books">books</a>
+      <a href="#tennis">tennis</a>
+      <a class="nav-cta" href="#connect">connect</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="top" data-shape="name" data-stage="01 — THE NAME">
+      <div class="hero-foot">
+        <p class="hero-sub">Electronics engineer. Freelance builder. Podcast host.<br>
+          Every shape on this page is the same 25,000 particles — like everything
+          I do is the same person, rearranged.</p>
+        <p class="hero-scroll">scroll to rearrange me <span class="arrow">↓</span></p>
+      </div>
+    </section>
+
+    <section class="sect" id="about" data-shape="person" data-stage="02 — THE PERSON">
+      <div class="panel right">
+        <span class="panel-label">02 — the person</span>
+        <h2>Hi, I'm Naiteek</h2>
+        <p>I trained as an electronics engineer, which rewired how I see everything:
+          inputs, transformations, outputs, feedback. These days I apply that thinking
+          to whatever needs building — an app, a store, a system, an audience.</p>
+        <p>I read business books the way other people watch series, I'm convinced
+          media is the highest-leverage thing a person can build, and I settle
+          arguments on a tennis court.</p>
+      </div>
+    </section>
+
+    <section class="sect" id="freelance" data-shape="phone" data-stage="03 — THE WORK">
+      <div class="panel left wide">
+        <span class="panel-label">03 — the work · freelance</span>
+        <h2>I build things for businesses</h2>
+        <p>One brief, one builder, end to end — scoping, design, code, launch.
+          Three kinds of problems I take on:</p>
+        <ul class="cap-list">
+          <li><span>apps</span>web and mobile apps, from idea to shipped</li>
+          <li><span>ecommerce</span>storefronts designed to convert, not just exist</li>
+          <li><span>automation</span>pipelines that erase the busywork</li>
+        </ul>
+        <div class="cases">
+          <article class="case">
+            <span class="tag">placeholder — swap in a real project</span>
+            <h3>Project one</h3>
+            <p>The problem, what I built, and the measurable result — three sentences,
+              no fluff.</p>
+          </article>
+          <article class="case">
+            <span class="tag">placeholder — swap in a real project</span>
+            <h3>Project two</h3>
+            <p>The problem, what I built, and the measurable result — three sentences,
+              no fluff.</p>
+          </article>
+        </div>
+        <a class="cta small" href="#connect">Work with me →</a>
+      </div>
+    </section>
+
+    <section class="sect" id="electronics" data-shape="chip" data-stage="04 — THE CORE">
+      <div class="panel right">
+        <span class="panel-label">04 — the core · electronics</span>
+        <h2>First language: electrons</h2>
+        <p>Before apps and audiences there were breadboards, burnt fingertips, and
+          the small magic of a circuit doing exactly what you told it to. Engineering
+          is the core everything else runs on — it's why my builds are systems,
+          not decoration.</p>
+        <ul class="spec-list">
+          <li><span>discipline</span>electronics engineering</li>
+          <li><span>habitat</span>between the lab and the terminal</li>
+          <li><span>belief</span>everything is a signal chain</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sect" id="podcast" data-shape="mic" data-stage="05 — THE SIGNAL">
+      <div class="panel left">
+        <span class="panel-label">05 — the signal · podcast</span>
+        <h2>The podcast</h2>
+        <p>Media is leverage: record once, broadcast forever. The podcast is where
+          the engineering, the builds, and the books get transmitted.</p>
+        <article class="case episode">
+          <span class="tag">placeholder — link your latest episode</span>
+          <h3>EP-042 · Episode title goes here</h3>
+          <p>One-line hook for the latest episode. Embedded player drops in here.</p>
+        </article>
+        <div class="platforms">
+          <a href="#" class="chip">Spotify ↗</a>
+          <a href="#" class="chip">Apple ↗</a>
+          <a href="#" class="chip">YouTube ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sect" id="books" data-shape="book" data-stage="06 — THE INPUT">
+      <div class="panel right wide">
+        <span class="panel-label">06 — the input · books</span>
+        <h2>Fuel</h2>
+        <p>Business books are my feedback loop — output goes back into the input and
+          the whole system gets louder. Current favorites:</p>
+        <ol class="shelf">
+          <li><span class="idx">01</span><span class="book">The Almanack of Naval Ravikant</span><span class="note">the leverage playbook</span></li>
+          <li><span class="idx">02</span><span class="book">Zero to One</span><span class="note">build what doesn't exist yet</span></li>
+          <li><span class="idx">03</span><span class="book">$100M Offers</span><span class="note">what you sell beats how you sell</span></li>
+          <li><span class="idx">04</span><span class="book">Shoe Dog</span><span class="note">every empire starts scrappy</span></li>
+          <li><span class="idx">05</span><span class="book">The E-Myth Revisited</span><span class="note">systems over heroics</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sect" id="tennis" data-shape="ball" data-stage="07 — THE GROUND">
+      <div class="panel left">
+        <span class="panel-label">07 — the ground · tennis</span>
+        <h2>Every system needs a ground</h2>
+        <p>Mine is a tennis court. Three sets of chasing a yellow ball discharges
+          whatever the week built up — and half my best ideas arrive mid-serve.</p>
+      </div>
+    </section>
+
+    <section class="sect" id="connect" data-shape="at" data-stage="08 — THE LOOP">
+      <div class="panel center">
+        <span class="panel-label">08 — close the loop</span>
+        <h2>Same particles, your project</h2>
+        <p>An app to build, a store to fix, a process to automate — or a podcast
+          to swap notes on. Say hi.</p>
+        <a class="cta" href="mailto:meetsc03@gmail.com">meetsc03@gmail.com →</a>
+        <div class="platforms center">
+          <a href="#" class="chip">LinkedIn ↗</a>
+          <a href="#" class="chip">X / Twitter ↗</a>
+          <a href="#" class="chip">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>25,000 particles, one person · built by hand, no template</span>
+    <span>© 2026 Naiteek · rev B</span>
+  </footer>
+
+  <div class="hud" aria-hidden="true">
+    <span class="hud-dot"></span>
+    <span id="hud-stage">01 — THE NAME</span>
+    <span id="hud-t">t = 0%</span>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
