@@ -807,15 +807,15 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
   .cover { min-height: auto; padding: 110px 5vw 40px; }
   .cover-text { max-width: 100%; }
   .cover-photo { display: none; }
-  .cover h1 { font-size: clamp(28px, 8vw, 48px); }
-  .cover-sub { font-size: 15px; }
+  .cover h1 { font-size: clamp(38px, 11vw, 60px); }
+  .cover-sub { font-size: 16px; line-height: 1.55; }
   .cta-row { gap: 8px; }
   .btn { font-size: 11px; padding: 10px 16px; }
 
   /* sections */
   .dept { padding: 50px 5vw 10px; }
   .page-top { padding-top: 100px; }
-  .dept-head h2 { font-size: clamp(24px, 7vw, 40px); }
+  .dept-head h2 { font-size: clamp(30px, 9vw, 44px); }
   .dept-tag { margin-left: 0; }
 
   /* proof cards (home) */
@@ -853,7 +853,7 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
 @media (max-width: 420px) {
   .topbar nav a { font-size: 9px; padding: 4px 5px; }
   .brand { font-size: 14px; }
-  .cover h1 { font-size: 26px; }
+  .cover h1 { font-size: clamp(36px, 10vw, 52px); }
   .cert-grid { grid-template-columns: 1fr; }
   .chips { gap: 5px; }
   .chips li { font-size: 10px; padding: 3px 8px; }
