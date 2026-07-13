@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.dataset.theme=localStorage.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")</script>
+  <script>document.documentElement.dataset.theme=localStorage.theme||"light"</script>
 </head>
 <body>
 
@@ -36,7 +36,10 @@
         <p class="dept-tag">builder. first principles. perpetually curious.</p>
       </header>
 
-      <div class="about-grid">
+      <div class="about-intro">
+        <div class="about-photo">
+          <img src="images/profilejpeg.jpeg" alt="Naiteek" loading="lazy" decoding="async">
+        </div>
         <div class="prose">
 
           <p>I think the most important ability anyone can develop is to see a
@@ -63,11 +66,6 @@
             the answer.</p>
 
         </div>
-        <aside class="color-box">
-          <div class="color-box-photo">
-            <img src="images/profilejpeg.jpeg" alt="Naiteek" loading="lazy" decoding="async">
-          </div>
-        </aside>
       </div>
     </section>
 
