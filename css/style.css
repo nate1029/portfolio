@@ -203,10 +203,12 @@ main, footer { position: relative; z-index: 1; }
 }
 
 .hl {
-  display: inline-block;
+  display: inline;
   background: var(--blue);
   color: var(--cream);
-  padding: 0 0.16em;
+  padding: 0.05em 0.16em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 
@@ -804,13 +806,13 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
   .theme-toggle { font-size: 9px; padding: 4px 8px; margin-left: 4px; }
 
   /* hero */
-  .cover { min-height: auto; padding: 110px 5vw 40px; }
+  .cover { min-height: 100svh; padding: 110px 5vw 40px; justify-content: center; }
   .cover-text { max-width: 100%; }
   .cover-photo { display: none; }
-  .cover h1 { font-size: clamp(38px, 11vw, 60px); }
-  .cover-sub { font-size: 16px; line-height: 1.55; }
-  .cta-row { gap: 8px; }
-  .btn { font-size: 11px; padding: 10px 16px; }
+  .cover h1 { font-size: clamp(56px, 16vw, 80px); line-height: 1.05; }
+  .cover-sub { font-size: 17px; line-height: 1.55; margin-top: 20px; }
+  .cta-row { gap: 8px; margin-top: 28px; }
+  .btn { font-size: 12px; padding: 12px 20px; }
 
   /* sections */
   .dept { padding: 50px 5vw 10px; }
@@ -853,7 +855,7 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
 @media (max-width: 420px) {
   .topbar nav a { font-size: 9px; padding: 4px 5px; }
   .brand { font-size: 14px; }
-  .cover h1 { font-size: clamp(36px, 10vw, 52px); }
+  .cover h1 { font-size: clamp(52px, 15vw, 72px); }
   .cert-grid { grid-template-columns: 1fr; }
   .chips { gap: 5px; }
   .chips li { font-size: 10px; padding: 3px 8px; }
