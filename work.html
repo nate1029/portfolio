@@ -50,7 +50,7 @@
           <div class="cs-media cs-media--slider" id="impulse-media">
             <!-- Slide 0: YouTube video -->
             <div class="cs-slide" data-slide="0">
-              <div id="impulse-yt" class="cs-yt-wrap"></div>
+              <div id="impulse-yt" class="cs-yt-wrap" data-video-id="kYRS4bwMa9A"></div>
             </div>
             <!-- Slide 1: screenshot -->
             <div class="cs-slide" data-slide="1">
@@ -69,7 +69,10 @@
           <div class="cs-body">
             <div class="card-top">
               <span class="entry-no">software · self-built</span>
-              <a class="tag-pill live" href="https://github.com/nate1029/Impulse" target="_blank" rel="noopener">github ↗</a>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://www.youtube.com/watch?v=kYRS4bwMa9A" target="_blank" rel="noopener">video ↗</a>
+                <a class="tag-pill live" href="https://github.com/nate1029/Impulse" target="_blank" rel="noopener">github ↗</a>
+              </span>
             </div>
             <h3>Impulse IDE</h3>
             <p>Most hardware IDEs treat AI as an afterthought. Impulse is built the other way
@@ -119,14 +122,32 @@
         </article>
 
         <article class="cs" data-tags="hardware">
-          <div class="cs-media">
-            <img class="shot" loading="lazy" decoding="async" src="images/sos-helmet.jpeg" alt="Smart SOS Helmet" onerror="this.remove()">
-            <span class="media-note">drop images/sos-helmet.jpeg</span>
+          <div class="cs-media cs-media--slider" id="helmet-media">
+            <!-- Slide 0: YouTube video -->
+            <div class="cs-slide" data-slide="0">
+              <div id="helmet-yt" class="cs-yt-wrap" data-video-id="tb1Q5e-UGhs"></div>
+            </div>
+            <!-- Slide 1: photo -->
+            <div class="cs-slide" data-slide="1">
+              <img class="shot" loading="lazy" decoding="async" src="images/sos-helmet.jpeg" alt="Smart SOS Helmet" onerror="this.remove()">
+              <span class="media-note">drop images/sos-helmet.jpeg</span>
+            </div>
+            <!-- Nav dots -->
+            <div class="cs-dots" aria-hidden="true">
+              <button class="cs-dot active" data-target="0" tabindex="-1"></button>
+              <button class="cs-dot" data-target="1" tabindex="-1"></button>
+            </div>
+            <!-- Prev / Next arrows -->
+            <button class="cs-arrow cs-arrow--prev" aria-label="Previous slide">&#8249;</button>
+            <button class="cs-arrow cs-arrow--next" aria-label="Next slide">&#8250;</button>
           </div>
           <div class="cs-body">
             <div class="card-top">
               <span class="entry-no">hardware · embedded</span>
-              <span class="tag-pill">confirm the details</span>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://www.youtube.com/watch?v=tb1Q5e-UGhs" target="_blank" rel="noopener">video ↗</a>
+                <span class="tag-pill">confirm the details</span>
+              </span>
             </div>
             <h3>Smart SOS Helmet</h3>
             <p>A crash-detection helmet with a companion app that handles GPS and emergency
