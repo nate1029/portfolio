@@ -4,7 +4,7 @@
      Slide 0 — YouTube video (autoplay, muted)
      Slide 1 — image
    Video plays once → holds last frame → auto-swipes to image.
-   Supports touch swiping, dot indicators, and prev/next arrows.
+   Supports touch swiping (both left & right), dot indicators, and prev/next arrows.
    ============================================================ */
 
 (function () {
@@ -25,8 +25,10 @@
 
     function goTo(idx) {
       idx = Math.max(0, Math.min(totalSlides - 1, idx));
+      var previousSlide = currentSlide;
       currentSlide = idx;
       media.dataset.active = idx;
+
       dots.forEach(function (d, i) {
         d.classList.toggle("active", i === idx);
       });
@@ -35,34 +37,67 @@
       if (idx !== 0 && ytPlayer) {
         try { ytPlayer.pauseVideo(); } catch (e) {}
       }
-      /* Resume / restart video when going back to slide 0,
-         but only if it hasn't ended yet */
-      if (idx === 0 && ytPlayer && !videoEnded) {
-        try { ytPlayer.playVideo(); } catch (e) {}
+
+      /* When returning to slide 0, reset & replay video */
+      if (idx === 0 && ytPlayer) {
+        try {
+          if (videoEnded || previousSlide !== 0) {
+            videoEnded = false;
+            ytPlayer.seekTo(0, true);
+          }
+          ytPlayer.playVideo();
+        } catch (e) {}
       }
     }
 
     /* ---- Dots ---- */
     dots.forEach(function (dot) {
-      dot.addEventListener("click", function () {
+      dot.addEventListener("click", function (e) {
+        e.stopPropagation();
         goTo(parseInt(dot.dataset.target, 10));
       });
     });
 
     /* ---- Arrows ---- */
-    if (prevBtn) prevBtn.addEventListener("click", function () { goTo(currentSlide - 1); });
-    if (nextBtn) nextBtn.addEventListener("click", function () { goTo(currentSlide + 1); });
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        goTo(currentSlide - 1);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        goTo(currentSlide + 1);
+      });
+    }
 
-    /* ---- Touch / swipe ---- */
+    /* ---- Touch / Swipe navigation ---- */
     var touchStartX = null;
+    var touchStartY = null;
+
     media.addEventListener("touchstart", function (e) {
       touchStartX = e.changedTouches[0].clientX;
+      touchStartY = e.changedTouches[0].clientY;
     }, { passive: true });
+
     media.addEventListener("touchend", function (e) {
-      if (touchStartX === null) return;
+      if (touchStartX === null || touchStartY === null) return;
       var dx = e.changedTouches[0].clientX - touchStartX;
+      var dy = e.changedTouches[0].clientY - touchStartY;
       touchStartX = null;
-      if (Math.abs(dx) > 40) goTo(currentSlide + (dx < 0 ? 1 : -1));
+      touchStartY = null;
+
+      /* Horizontal gesture check (>40px and more horizontal than vertical) */
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+        if (dx < 0) {
+          /* Swiped left -> Next slide */
+          goTo(currentSlide + 1);
+        } else {
+          /* Swiped right -> Previous slide (back to video) */
+          goTo(currentSlide - 1);
+        }
+      }
     }, { passive: true });
 
     /* ---- Queue YouTube Player Init ---- */
