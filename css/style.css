@@ -533,6 +533,106 @@ main, footer { position: relative; z-index: 1; }
 
 .shot.contain { object-fit: contain; background: var(--card); }
 
+/* ---------- impulse media slider ---------- */
+
+.cs-media--slider {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.cs-media--slider .cs-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity  0.45s ease;
+  will-change: transform, opacity;
+}
+
+/* slides sit in a track: slide 0 at translateX(0), slide 1 at translateX(100%) by default */
+.cs-media--slider .cs-slide[data-slide="0"] { transform: translateX(0%); opacity: 1; }
+.cs-media--slider .cs-slide[data-slide="1"] { transform: translateX(100%); opacity: 0; }
+
+/* when slider is on slide 1 */
+.cs-media--slider[data-active="1"] .cs-slide[data-slide="0"] { transform: translateX(-100%); opacity: 0; }
+.cs-media--slider[data-active="1"] .cs-slide[data-slide="1"] { transform: translateX(0%); opacity: 1; }
+
+/* YouTube iframe wrapper fills the slide */
+.cs-yt-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cs-yt-wrap iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+/* dot indicators */
+.cs-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 10;
+}
+
+.cs-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.55;
+  transition: opacity 0.25s, background 0.25s;
+}
+
+.cs-dot.active {
+  background: var(--ink);
+  opacity: 1;
+}
+
+/* prev / next arrows */
+.cs-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: var(--bar-bg);
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.cs-media--slider:hover .cs-arrow { opacity: 0.8; }
+.cs-arrow:hover { opacity: 1 !important; background: var(--ink); color: var(--paper); }
+
+.cs-arrow--prev { left: 8px; }
+.cs-arrow--next { right: 8px; }
+
 /* ---------- certs ---------- */
 
 .cert-grid {

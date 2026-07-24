@@ -47,9 +47,24 @@
       <div class="cs-list" id="work-grid">
 
         <article class="cs" data-tags="software hardware">
-          <div class="cs-media">
-            <img class="shot contain" loading="lazy" decoding="async" src="images/impulse.png" alt="Impulse IDE" onerror="this.remove()">
-            <span class="media-note">drop images/impulse.png</span>
+          <div class="cs-media cs-media--slider" id="impulse-media">
+            <!-- Slide 0: YouTube video -->
+            <div class="cs-slide" data-slide="0">
+              <div id="impulse-yt" class="cs-yt-wrap"></div>
+            </div>
+            <!-- Slide 1: screenshot -->
+            <div class="cs-slide" data-slide="1">
+              <img class="shot contain" loading="lazy" decoding="async" src="images/impulse.png" alt="Impulse IDE" onerror="this.remove()">
+              <span class="media-note">drop images/impulse.png</span>
+            </div>
+            <!-- Nav dots -->
+            <div class="cs-dots" aria-hidden="true">
+              <button class="cs-dot active" data-target="0" tabindex="-1"></button>
+              <button class="cs-dot" data-target="1" tabindex="-1"></button>
+            </div>
+            <!-- Prev / Next arrows -->
+            <button class="cs-arrow cs-arrow--prev" aria-label="Previous slide">&#8249;</button>
+            <button class="cs-arrow cs-arrow--next" aria-label="Next slide">&#8250;</button>
           </div>
           <div class="cs-body">
             <div class="card-top">
@@ -178,5 +193,14 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/impulse-slider.js"></script>
+  <script>
+    /* Load YouTube IFrame API after page is ready */
+    (function(){
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(tag);
+    })();
+  </script>
 </body>
 </html>
