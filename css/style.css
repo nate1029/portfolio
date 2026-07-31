@@ -897,16 +897,6 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
 
 .dept.in-view, .ticker.in-view { opacity: 1; transform: none; }
 
-/* card scroll reveal — mobile only */
-@media (max-width: 760px) {
-  .cs, .cert, .proof {
-    opacity: 0;
-    transform: translateY(22px);
-    transition: opacity 0.5s ease var(--card-delay, 0ms), transform 0.5s ease var(--card-delay, 0ms);
-  }
-  .cs.card-in, .cert.card-in, .proof.card-in { opacity: 1; transform: none; }
-}
-
 /* ---------- responsive ---------- */
 
 @media (max-width: 760px) {
@@ -978,7 +968,7 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .ticker-track { animation: none; }
-  .cs, .proof, .cert { transition: none !important; opacity: 1 !important; transform: none !important; }
+  .cs, .proof { transition: none; }
   .shot { transition: none; }
   .dept, .ticker { transition: none; opacity: 1; transform: none; }
 }
