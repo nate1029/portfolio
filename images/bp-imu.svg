@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 266" fill="none" stroke="#f3f0e7" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" font-family="ui-monospace, Consolas, monospace" font-size="9" letter-spacing="1">
+  <rect x="70" y="96" width="150" height="104" rx="4"/>
+  <circle cx="82" cy="188" r="4"/><circle cx="208" cy="188" r="4"/>
+  <circle cx="92" cy="108" r="2.2"/>
+  <circle cx="107" cy="108" r="2.2"/>
+  <circle cx="122" cy="108" r="2.2"/>
+  <circle cx="137" cy="108" r="2.2"/>
+  <circle cx="152" cy="108" r="2.2"/>
+  <circle cx="167" cy="108" r="2.2"/>
+  <circle cx="182" cy="108" r="2.2"/>
+  <circle cx="197" cy="108" r="2.2"/>
+  <rect x="124" y="130" width="42" height="42"/>
+  <circle cx="130" cy="136" r="1.8" fill="#f3f0e7"/>
+  <path d="M130 130v-5M140 130v-5M150 130v-5M160 130v-5M130 172v5M140 172v5M150 172v5M160 172v5M124 138h-5M124 151h-5M124 164h-5M166 138h5M166 151h5M166 164h5" stroke-width="1"/>
+  <path d="M145 151h118M263 151l-9-4v8Z"/>
+  <text x="270" y="155" fill="#f3f0e7" stroke="none" text-anchor="start">X</text>
+  <path d="M145 151V34M145 34l-4 9h8Z"/>
+  <text x="152" y="38" fill="#f3f0e7" stroke="none" text-anchor="start">Y</text>
+  <path d="M145 151L62 226M62 226l10-2-6-7Z"/>
+  <text x="48" y="240" fill="#f3f0e7" stroke="none" text-anchor="start">Z</text>
+  <path d="M238 138a14 14 0 1 1 0 26" stroke-dasharray="3 4" stroke-width="1"/>
+  <path d="M132 58a14 14 0 1 1 26 0" stroke-dasharray="3 4" stroke-width="1"/>
+  <text x="150" y="256" fill="#f3f0e7" stroke="none" text-anchor="middle">MPU6050 - ACCEL + GYRO AXES</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" fill="none" stroke="#f3f0e7" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" font-family="ui-monospace, Consolas, monospace" font-size="9" letter-spacing="1">
+  <!-- MCU -->
+  <rect x="160" y="50" width="96" height="140"/>
+  <path d="M196 50a12 12 0 0 0 24 0"/>
+  <text x="192" y="126" fill="#f3f0e7" stroke="none">ESP</text>
+  <!-- left pins -->
+  <path d="M160 74h-22M160 100h-22M160 126h-22M160 152h-22M160 176h-22"/>
+  <!-- right pins -->
+  <path d="M256 74h22M256 100h22M256 126h22M256 152h22M256 176h22"/>
+  <g fill="#f3f0e7" stroke="none" font-size="7.5">
+    <text x="165" y="77">3V3</text><text x="165" y="103">SDA</text><text x="165" y="129">SCL</text><text x="165" y="155">INT</text><text x="165" y="179">GND</text>
+    <text x="232" y="77">D5</text><text x="232" y="103">D4</text><text x="232" y="129">TX</text><text x="232" y="155">RX</text><text x="228" y="179">VIN</text>
+  </g>
+
+  <!-- IMU -->
+  <rect x="24" y="84" width="72" height="60"/>
+  <text x="34" y="118" fill="#f3f0e7" stroke="none">MPU6050</text>
+  <path d="M96 100h42M96 126h42"/>
+  <path d="M60 84V60h78V74"/>
+  <circle cx="118" cy="100" r="1.8" fill="#f3f0e7"/>
+  <!-- pull-up -->
+  <path d="M118 100V92l-5-3 10-5-10-5 10-5-5-3V60"/>
+  <!-- IMU ground -->
+  <path d="M60 144v32h78M60 200v-24M48 200h24M52 205h16M56 210h8"/>
+  <circle cx="60" cy="176" r="1.8" fill="#f3f0e7"/>
+
+  <!-- buzzer branch -->
+  <path d="M278 74h20l4-7 8 14 8-14 8 14 8-14 4 7h22"/>
+  <text x="304" y="58" fill="#f3f0e7" stroke="none">220R</text>
+  <path d="M360 62v24a12 12 0 0 0 0-24Z"/>
+  <text x="352" y="50" fill="#f3f0e7" stroke="none">BZ1</text>
+  <path d="M372 74h22v40M382 114h24M386 119h16M390 124h8"/>
+
+  <!-- cancel switch -->
+  <path d="M278 100h34M340 100h30v14"/>
+  <circle cx="314" cy="100" r="2.4"/><circle cx="338" cy="100" r="2.4"/>
+  <path d="M312 90h28M326 90v-8"/>
+  <text x="302" y="118" fill="#f3f0e7" stroke="none">SW1 CANCEL</text>
+  <path d="M358 114h24M362 119h16M366 124h8"/>
+
+  <!-- GPS / app link -->
+  <path d="M278 126h40M278 152h40"/>
+  <rect x="318" y="116" width="78" height="46" stroke-dasharray="5 4"/>
+  <text x="330" y="143" fill="#f3f0e7" stroke="none">APP / GPS</text>
+
+  <!-- title block -->
+  <path d="M250 216h160v34H250ZM250 233h160M340 216v34" stroke-width="0.9"/>
+  <g fill="#f3f0e7" stroke="none" font-size="7.5">
+    <text x="256" y="228">SOS HELMET</text><text x="346" y="228">REV A</text>
+    <text x="256" y="245">DRAWN N.C.</text><text x="346" y="245">SHT 1/1</text>
+  </g>
+</svg>

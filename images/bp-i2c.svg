@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 214" fill="none" stroke="#f3f0e7" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" font-family="ui-monospace, Consolas, monospace" font-size="9" letter-spacing="1">
+  <path d="M20 60H70V86H82V60H94V86H116V60H128V86H150V60H162V86H184V60H196V86H218V60H230V86H252V60H264V86H286V60H298V86H320V60H332V86H354V60H366V86H386V60H426"/>
+  <path d="M20 126H58V152H74V126H142V152H176V126H210V152H398V126H426"/>
+  <text x="14" y="76" fill="#f3f0e7" stroke="none" text-anchor="end">SCL</text>
+  <text x="14" y="142" fill="#f3f0e7" stroke="none" text-anchor="end">SDA</text>
+  <path d="M58 40v124M308 40v124M342 40v124M398 40v124" stroke-dasharray="3 4" stroke-width="0.8"/>
+  <text x="58" y="32" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">START</text>
+  <text x="189.0" y="32" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">ADDR 0x68</text>
+  <text x="325.0" y="32" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">W</text>
+  <text x="359.0" y="32" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">ACK</text>
+  <text x="412" y="32" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">STOP</text>
+  <text x="88" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">1</text>
+  <text x="122" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">1</text>
+  <text x="156" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">0</text>
+  <text x="190" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">1</text>
+  <text x="224" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">0</text>
+  <text x="258" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">0</text>
+  <text x="292" y="176" fill="#f3f0e7" stroke="none" text-anchor="middle" font-size="8">0</text>
+  <text x="30" y="204" fill="#f3f0e7" stroke="none" text-anchor="start">I2C WRITE - MPU6050</text>
+</svg>

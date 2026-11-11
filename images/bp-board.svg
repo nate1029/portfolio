@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" fill="none" stroke="#f3f0e7" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" font-family="ui-monospace, Consolas, monospace" font-size="9.5" letter-spacing="1">
+  <!-- board outline, top view -->
+  <path d="M40 50H336l16 16v58l14 14v118a8 8 0 0 1-8 8H40Z"/>
+  <!-- USB + barrel jack -->
+  <rect x="18" y="78" width="58" height="46"/>
+  <rect x="18" y="200" width="64" height="44"/>
+  <path d="M82 222h10"/>
+  <!-- headers -->
+  <rect x="150" y="58" width="92" height="12"/>
+  <rect x="250" y="58" width="78" height="12"/>
+  <rect x="186" y="246" width="72" height="12"/>
+  <rect x="266" y="246" width="66" height="12"/>
+  <g fill="#f3f0e7" stroke="none">
+    <circle cx="158" cy="64" r="1.6"/><circle cx="170" cy="64" r="1.6"/><circle cx="182" cy="64" r="1.6"/><circle cx="194" cy="64" r="1.6"/><circle cx="206" cy="64" r="1.6"/><circle cx="218" cy="64" r="1.6"/><circle cx="230" cy="64" r="1.6"/>
+    <circle cx="258" cy="64" r="1.6"/><circle cx="270" cy="64" r="1.6"/><circle cx="282" cy="64" r="1.6"/><circle cx="294" cy="64" r="1.6"/><circle cx="306" cy="64" r="1.6"/><circle cx="318" cy="64" r="1.6"/>
+    <circle cx="194" cy="252" r="1.6"/><circle cx="206" cy="252" r="1.6"/><circle cx="218" cy="252" r="1.6"/><circle cx="230" cy="252" r="1.6"/><circle cx="242" cy="252" r="1.6"/>
+    <circle cx="274" cy="252" r="1.6"/><circle cx="286" cy="252" r="1.6"/><circle cx="298" cy="252" r="1.6"/><circle cx="310" cy="252" r="1.6"/><circle cx="322" cy="252" r="1.6"/>
+    <circle cx="336" cy="128" r="1.6"/><circle cx="346" cy="128" r="1.6"/><circle cx="336" cy="138" r="1.6"/><circle cx="346" cy="138" r="1.6"/><circle cx="336" cy="148" r="1.6"/><circle cx="346" cy="148" r="1.6"/>
+  </g>
+  <!-- MCU (DIP) -->
+  <rect x="196" y="166" width="136" height="36"/>
+  <path d="M196 178a6 6 0 0 1 0 12"/>
+  <path d="M206 166v-6M218 166v-6M230 166v-6M242 166v-6M254 166v-6M266 166v-6M278 166v-6M290 166v-6M302 166v-6M314 166v-6M206 202v6M218 202v6M230 202v6M242 202v6M254 202v6M266 202v6M278 202v6M290 202v6M302 202v6M314 202v6" stroke-width="1"/>
+  <!-- crystal, reset, regulator -->
+  <rect x="118" y="132" width="36" height="14" rx="7"/>
+  <rect x="92" y="58" width="22" height="22"/><circle cx="103" cy="69" r="5"/>
+  <rect x="108" y="196" width="30" height="22"/>
+  <!-- mounting holes -->
+  <circle cx="92" cy="262" r="5"/><circle cx="342" cy="80" r="5"/><circle cx="350" cy="250" r="5"/>
+
+  <!-- callouts -->
+  <path d="M47 78L30 30h60" stroke-width="1"/>
+  <text x="34" y="24" fill="#f3f0e7" stroke="none">USB / UPLOAD + SERIAL</text>
+  <path d="M264 184l60-86h60" stroke-width="1"/>
+  <text x="296" y="92" fill="#f3f0e7" stroke="none">TARGET MCU</text>
+  <text x="40" y="300" fill="#f3f0e7" stroke="none">IMPULSE IDE - COMPILE / UPLOAD / MONITOR</text>
+</svg>

@@ -1,10 +1,6 @@
-# Naiteek — portfolio (v5)
+# Naiteek — portfolio
 
-A lean four-tab portfolio positioning Naiteek for roles that blend technical
-(electronics, AI/ML) with marketing/business — the bridge between people who
-build and people who sell.
-
-Plain HTML/CSS/JS, no framework, no build step.
+Five static pages. Plain HTML/CSS/JS, no framework, no build step.
 
 ## Run locally
 
@@ -14,31 +10,19 @@ npx serve -l 5050 .
 
 ## Pages
 
-- **index.html (Home)** — the thesis ("Engineers can't sell it. Marketers can't
-  build it. I do both."), three proof-point cards, paths to Work and Resume.
-- **work.html (Work)** — case studies, filterable by hackathons / ai-ml /
-  freelance / hardware. Every entry is structured why-it-mattered → what-I-built →
-  how-it-landed → result. (This structure is deliberate; it is never attributed
-  on-site — keep it that way.)
-- **about.html (About)** — the story arc: electronics → AI/ML → marketing
-  curiosity. Podcast, tennis, and reading appear only as one-line "color".
-- **resume.html (Resume)** — clean one-pager with a print stylesheet;
-  "download pdf" uses window.print() until a designed PDF replaces it.
+- **index.html** — hero, one-line proof strip, three project cards deep-linked into Work.
+- **work.html** — project cards, filterable by software / hardware / freelance / ventures.
+- **certs.html** — hackathons and recognition.
+- **about.html** — the story.
+- **resume.html** — one-pager with print stylesheet; "download pdf" uses `window.print()`.
+  Phone number is injected only at print time (see end of `js/main.js`), never shown on the web page.
 
 ## Interactions (js/main.js)
 
-- Cursor-reactive background: grid lines bend smoothly away from the pointer
-  (quadratic-curve smoothing, smoothstep falloff, no cursor marker). Desktop
-  pointer devices only; touch/reduced-motion get the static CSS grid.
-- Scroll reveals, work-page tag filter, tilt on cards, draggable home stickers.
-
-## Content to replace (orange placeholder pills)
-
-- [ ] Home: three proof points with real numbers
-- [ ] Work: all five case studies (hackathon win, AI/ML build, two freelance, hardware)
-- [ ] About: the real story (give Claude the actual arc), podcast link
-- [ ] Resume: every entry — name, roles, dates, bullets, links
-- [ ] Footer "currently reading" line
+- Cursor-reactive grid: lines bend away from the pointer. In dark theme they also
+  light up near the cursor (`--grid-glow` in `css/style.css`). Desktop pointers only;
+  touch and reduced-motion get the static CSS grid.
+- Scroll reveals, work filter, card tilt, theme toggle.
 
 ## Design system
 

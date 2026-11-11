@@ -3,15 +3,22 @@
 <head>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="2d859d3a-fdac-441a-a37e-69e68d2ca7e6"></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Work — Naiteek</title>
-  <meta name="description" content="Projects: Impulse IDE, CodeChronicles, NudgeUpp, and the Smart SOS Helmet.">
+  <meta name="description" content="Projects: Impulse IDE, Smart Yoga Mat, Smart SOS Helmet, Game of Codes, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Work — Naiteek">
+  <meta property="og:description" content="Projects: Impulse IDE, Smart Yoga Mat, Smart SOS Helmet, Game of Codes, and more.">
+  <meta property="og:url" content="https://naiteekchoksi.me/work.html">
+  <meta property="og:image" content="https://naiteekchoksi.me/images/profilejpeg.jpeg">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://naiteekchoksi.me/work.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.dataset.theme=localStorage.theme||"light"</script>
+  <script>document.documentElement.dataset.theme=localStorage.theme||"dark"</script>
 </head>
 <body>
 
@@ -25,7 +32,7 @@
       <a href="certs.html">certs</a>
       <a href="about.html">about</a>
       <a href="resume.html">resume</a>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">dark</button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">mat</button>
     </nav>
   </header>
 
@@ -48,7 +55,7 @@
 
       <div class="cs-list" id="work-grid">
 
-        <article class="cs" data-tags="software hardware">
+        <article class="cs" id="impulse" data-tags="software hardware">
           <div class="cs-media cs-media--slider" id="impulse-media">
             <!-- Slide 0: YouTube video -->
             <div class="cs-slide" data-slide="0">
@@ -70,7 +77,7 @@
           </div>
           <div class="cs-body">
             <div class="card-top">
-              <span class="entry-no">software · self-built</span>
+              <span class="entry-no">embedded tooling · self-built</span>
               <span style="display:inline-flex; gap:6px">
                 <a class="tag-pill live" href="https://www.youtube.com/watch?v=kYRS4bwMa9A" target="_blank" rel="noopener">video ↗</a>
                 <a class="tag-pill live" href="https://github.com/nate1029/Impulse" target="_blank" rel="noopener">github ↗</a>
@@ -87,9 +94,28 @@
           </div>
         </article>
 
-        <article class="cs" data-tags="software">
+        <article class="cs" id="yoga-mat" data-tags="software hardware">
+          <a class="cs-media" href="https://www.youtube.com/watch?v=bW1IdYT0Mp0" target="_blank" rel="noopener" aria-label="Watch the Smart Yoga Mat video">
+            <img class="shot" loading="lazy" decoding="async" src="https://i.ytimg.com/vi/bW1IdYT0Mp0/hqdefault.jpg" alt="Smart Yoga Mat demo" onerror="this.remove()">
+            <span class="media-note">watch the video</span>
+          </a>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">ai/ml · computer vision</span>
+              <a class="tag-pill live" href="https://www.youtube.com/watch?v=bW1IdYT0Mp0" target="_blank" rel="noopener">video ↗</a>
+            </div>
+            <h3>Smart Yoga Mat</h3>
+            <p>Yoga apps want you staring at a screen, which defeats the point. This one
+              watches instead: pose estimation tracks your body, compares it against the
+              correct posture, and tells you what to fix in real time &mdash; so the phone
+              stays out of the practice.</p>
+            <ul class="chips"><li>MediaPipe</li><li>YOLO</li><li>Python</li><li>pose estimation</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" id="game-of-codes" data-tags="software">
           <div class="cs-media">
-            <img class="shot" loading="lazy" decoding="async" src="images/gameofcodes.png" alt="CodeChronicles" onerror="this.remove()">
+            <img class="shot" loading="lazy" decoding="async" src="images/gameofcodes.png" alt="Game of Codes" onerror="this.remove()">
             <span class="media-note">drop images/gameofcodes.png</span>
           </div>
           <div class="cs-body">
@@ -97,10 +123,11 @@
               <span class="entry-no">software · live</span>
               <a class="tag-pill live" href="https://www.gameofcodes.io/" target="_blank" rel="noopener">visit ↗</a>
             </div>
-            <h3>CodeChronicles</h3>
+            <h3>Game of Codes</h3>
             <p>A game that teaches kids to code by making code the actual mechanic — not a
               lesson, not a tutorial, just a story you can only move forward by writing real
               logic. Built for the age where attention is the scarce resource.</p>
+            <p class="stat">Government-funded &middot; 100+ learners</p>
             <ul class="chips"><li>C++</li><li>web</li><li>game</li><li>edtech</li></ul>
           </div>
         </article>
@@ -123,7 +150,7 @@
           </div>
         </article>
 
-        <article class="cs" data-tags="hardware">
+        <article class="cs" id="sos-helmet" data-tags="hardware">
           <div class="cs-media cs-media--slider" id="helmet-media">
             <!-- Slide 0: YouTube video -->
             <div class="cs-slide" data-slide="0">
@@ -174,7 +201,9 @@
             <h3>No Doubt — the podcast</h3>
             <p>Conversations that connect people across the business ecosystem — the belief
               being: the more people you bring into the room, the more others are inspired to
-              chase their own thing.</p>
+              chase their own thing. It has grown past the feed too, with live community
+              events.</p>
+            <p class="stat">25+ episodes &middot; 1.5k+ views on recent ones</p>
             <ul class="chips"><li>podcast</li><li>hosting</li><li>audio + video</li></ul>
           </div>
         </article>
@@ -208,7 +237,11 @@
   <footer class="footer-small">
     <div class="footer-row">
       <span>© 2026 Naiteek · built by hand, no template</span>
-      <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+      <span class="footer-links">
+        <a href="https://www.linkedin.com/in/naiteek-choksi-7205b2227/" target="_blank" rel="noopener">linkedin</a> &middot;
+        <a href="https://github.com/nate1029" target="_blank" rel="noopener">github</a> &middot;
+        <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+      </span>
     </div>
   </footer>
 

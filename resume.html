@@ -3,15 +3,22 @@
 <head>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="2d859d3a-fdac-441a-a37e-69e68d2ca7e6"></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Resume &mdash; Naiteek</title>
-  <meta name="description" content="Naiteek Choksi &mdash; electronics engineer, AI/ML lead, builder.">
+  <meta name="description" content="Naiteek Choksi &mdash; electronics engineer. Embedded systems, IoT and applied AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Resume &mdash; Naiteek">
+  <meta property="og:description" content="Naiteek Choksi &mdash; electronics engineer. Embedded systems, IoT and applied AI.">
+  <meta property="og:url" content="https://naiteekchoksi.me/resume.html">
+  <meta property="og:image" content="https://naiteekchoksi.me/images/profilejpeg.jpeg">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://naiteekchoksi.me/resume.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.dataset.theme=localStorage.theme||"light"</script>
+  <script>document.documentElement.dataset.theme=localStorage.theme||"dark"</script>
 </head>
 <body>
 
@@ -25,7 +32,7 @@
       <a href="certs.html">certs</a>
       <a href="about.html">about</a>
       <a href="resume.html" class="active" aria-current="page">resume</a>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">dark</button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">mat</button>
     </nav>
   </header>
 
@@ -42,57 +49,79 @@
         <header class="r-head">
           <div>
             <h3>Naiteek Choksi</h3>
-            <p>Electronics &amp; Communication Engineer &middot; Vadodara, India</p>
+            <p>Embedded &middot; IoT &middot; applied AI &mdash; Vadodara, India</p>
           </div>
           <ul class="r-contact">
             <li><a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a></li>
-            <li>+91 81529 22909</li>
-            <li><a href="https://www.linkedin.com/in/naiteek-choksi-7205b2227/" target="_blank" rel="noopener">linkedin</a> &middot; <a href="https://github.com/nate1029" target="_blank" rel="noopener">github</a> &middot; <a href="https://naiteek.vercel.app" target="_blank" rel="noopener">naiteek.me</a></li>
+            <li class="print-only" id="r-phone"></li>
+            <li><a href="https://www.linkedin.com/in/naiteek-choksi-7205b2227/" target="_blank" rel="noopener">linkedin</a> &middot; <a href="https://github.com/nate1029" target="_blank" rel="noopener">github</a> &middot; <a href="https://naiteekchoksi.me" target="_blank" rel="noopener">naiteekchoksi.me</a></li>
           </ul>
         </header>
 
-        <section class="r-sec">
-          <h4>Experience</h4>
-          <article class="r-item">
-            <div class="r-item-head"><strong>AI/ML Lead &mdash; GDG on Campus SVIT, Vasad</strong><span>Sep 2025 &ndash; present</span></div>
-            <ul><li>Leading workshops and hands-on sessions on applied AI/ML for engineering students.</li></ul>
-          </article>
-          <article class="r-item">
-            <div class="r-item-head"><strong>Public Relations Chair &mdash; Rotary International</strong><span>Jun 2026 &ndash; present</span></div>
-            <ul><li>Strategic public relations planning, sales &amp; marketing for club initiatives.</li></ul>
-          </article>
-          <article class="r-item">
-            <div class="r-item-head"><strong>Founder &mdash; AppDice</strong><span>May 2025 &ndash; present</span></div>
-            <ul><li>Freelance app development &amp; automation. Shipped NudgeUpp (posture-tracking mobile app).</li></ul>
-          </article>
-        </section>
+        <p class="r-summary">Final-year electronics engineer building embedded and IoT devices
+          with AI on top &mdash; from schematic and firmware to a trained model. Also the
+          person who can explain it to the people who aren&rsquo;t engineers.</p>
 
         <section class="r-sec">
           <h4>Projects</h4>
           <article class="r-item">
-            <div class="r-item-head"><strong>Impulse IDE</strong><span>Electron &middot; AI &middot; Arduino CLI</span></div>
-            <ul><li>AI-agent-powered desktop IDE for Arduino/IoT &mdash; compile, upload, serial monitor, and error-memory system that learns from past failures.</li></ul>
+            <div class="r-item-head"><strong>Impulse IDE</strong><span>Electron &middot; Arduino CLI &middot; AI agent</span></div>
+            <ul>
+              <li>Desktop IDE for Arduino and IoT boards with an AI agent at its core: compile, upload and serial monitor in one window.</li>
+              <li>Error-memory system records past build failures and reuses the fix next time. Open source.</li>
+            </ul>
           </article>
           <article class="r-item">
-            <div class="r-item-head"><strong>Smart SOS Helmet</strong><span>MPU6050 &middot; ESP &middot; IoT</span></div>
-            <ul><li>Crash-detection helmet with companion app for GPS &amp; emergency calls. Buzzer + pushbutton false-alarm cancellation.</li></ul>
+            <div class="r-item-head"><strong>Smart SOS Helmet</strong><span>ESP &middot; MPU6050 &middot; companion app</span></div>
+            <ul><li>Crash-detection helmet: MPU6050 senses impact, a 5-second buzzer window lets the rider cancel a false alarm, then the ESP and app send GPS location and an emergency call.</li></ul>
+          </article>
+          <article class="r-item">
+            <div class="r-item-head"><strong>Smart Yoga Mat</strong><span>MediaPipe &middot; YOLO &middot; Python</span></div>
+            <ul><li>Real-time pose estimation that checks posture against the correct form and gives corrections, so practice is phone-free.</li></ul>
+          </article>
+          <article class="r-item">
+            <div class="r-item-head"><strong>Game of Codes</strong><span>government-funded &middot; live</span></div>
+            <ul><li>Browser game that teaches C++ by making real code the game mechanic. Government-funded; 100+ learners.</li></ul>
           </article>
         </section>
 
         <section class="r-sec">
           <h4>Skills</h4>
-          <ul class="chips r-chips">
-            <li>embedded systems</li><li>circuit design</li><li>VLSI</li><li>Cadence</li><li>IoT</li><li>Arduino</li>
-            <li>C/C++</li><li>Python</li><li>JavaScript</li><li>AI/ML</li>
-            <li>branding &amp; marketing</li><li>creative problem solving</li>
-          </ul>
+          <dl class="cs-rows">
+            <div><dt>Embedded &amp; IoT</dt><dd>Arduino, ESP, Arduino Cloud, sensor integration (MPU6050), C/C++</dd></div>
+            <div><dt>Design &amp; simulation</dt><dd>Cadence, KiCad, EasyEDA, Verilog, MATLAB, computer-network simulation</dd></div>
+            <div><dt>AI / ML</dt><dd>Python, MediaPipe, YOLO; 8+ models trained (pose estimation, healthcare disease prediction, Green AI)</dd></div>
+            <div><dt>Software</dt><dd>JavaScript, Electron, app development &amp; automation</dd></div>
+            <div><dt>Communication</dt><dd>Workshop lead, podcast host, public relations</dd></div>
+          </dl>
+        </section>
+
+        <section class="r-sec">
+          <h4>Experience</h4>
+          <article class="r-item">
+            <div class="r-item-head"><strong>AI/ML Lead &mdash; GDG on Campus SVIT, Vasad</strong><span>Sep 2025 &ndash; present</span></div>
+            <ul><li>Run workshops and hands-on sessions on applied AI/ML for engineering students.</li></ul>
+          </article>
+          <article class="r-item">
+            <div class="r-item-head"><strong>Founder &mdash; AppDice</strong><span>May 2025 &ndash; present</span></div>
+            <ul><li>Freelance app development and automation. Shipped NudgeUpp, a posture-tracking app, to the Play Store.</li></ul>
+          </article>
+          <article class="r-item">
+            <div class="r-item-head"><strong>Host &mdash; No Doubt podcast</strong><span>25+ episodes</span></div>
+            <ul><li>Interview founders and builders; recent episodes pass 1.5k views each. Run live community events.</li></ul>
+          </article>
+          <article class="r-item">
+            <div class="r-item-head"><strong>Public Relations Chair &mdash; Rotary International</strong><span>Jun 2026 &ndash; present</span></div>
+          </article>
         </section>
 
         <section class="r-sec">
           <h4>Highlights</h4>
           <ul class="chips r-chips">
-            <li>Open-R Hackathon &mdash; 1st place, 2025</li>
+            <li>Open-R Hackathon &mdash; 1st place, team of 4, 2025</li>
             <li>Cadence Chip Layout Workshop &mdash; CHARUSAT, 2026</li>
+            <li>Green Skills &amp; AI &mdash; Edunet &middot; Shell &middot; AICTE, 2025</li>
+            <li>AI Fluency for Small Businesses &mdash; Anthropic &middot; PayPal, 2026</li>
             <li>GTU Inter-Zonal Tennis &mdash; 1st place</li>
             <li>ITF Chair Umpire &mdash; MT200 Baroda</li>
           </ul>
@@ -115,7 +144,11 @@
   <footer class="footer-small">
     <div class="footer-row">
       <span>&copy; 2026 Naiteek &middot; built by hand, no template</span>
-      <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+      <span class="footer-links">
+        <a href="https://www.linkedin.com/in/naiteek-choksi-7205b2227/" target="_blank" rel="noopener">linkedin</a> &middot;
+        <a href="https://github.com/nate1029" target="_blank" rel="noopener">github</a> &middot;
+        <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+      </span>
     </div>
   </footer>
 

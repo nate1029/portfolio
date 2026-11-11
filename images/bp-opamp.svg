@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 230" fill="none" stroke="#f3f0e7" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" font-family="ui-monospace, Consolas, monospace" font-size="9" letter-spacing="1">
+  <path d="M140 66v100l88-50Z"/>
+  <text x="150" y="95" fill="#f3f0e7" stroke="none" text-anchor="start" font-size="12">-</text>
+  <text x="150" y="147" fill="#f3f0e7" stroke="none" text-anchor="start" font-size="12">+</text>
+  <path d="M40 141h100"/><circle cx="40" cy="141" r="2.4"/>
+  <text x="34" y="132" fill="#f3f0e7" stroke="none" text-anchor="start">VIN</text>
+  <path d="M228 116h84"/><circle cx="312" cy="116" r="2.4"/>
+  <text x="318" y="108" fill="#f3f0e7" stroke="none" text-anchor="end">VOUT</text>
+  <circle cx="262" cy="116" r="1.8" fill="#f3f0e7"/><path d="M262 116V40H210"/>
+  <path d="M150 40L152.5 34L157.5 46L162.5 34L167.5 46L172.5 34L177.5 46L182.5 34L187.5 46L192.5 34L197.5 46L202.5 34L207.5 46L210 40"/><path d="M150 40h-42v51h32"/>
+  <text x="180" y="26" fill="#f3f0e7" stroke="none" text-anchor="middle">R2</text>
+  <circle cx="108" cy="91" r="1.8" fill="#f3f0e7"/>
+  <path d="M108 91v14"/><path d="M108 105L102 107.3L114 112.0L102 116.7L114 121.3L102 126.0L114 130.7L102 135.3L114 140.0L102 144.7L114 149.3L102 154.0L114 158.7L108 161"/><path d="M108 161v12"/><path d="M108 173v10M96 183h24M100 188h16M104 193h8"/>
+  <text x="90" y="138" fill="#f3f0e7" stroke="none" text-anchor="end">R1</text>
+  <path d="M184 91V70M184 141v21" stroke-width="1"/>
+  <text x="190" y="72" fill="#f3f0e7" stroke="none" text-anchor="start" font-size="8">V+</text>
+  <text x="190" y="168" fill="#f3f0e7" stroke="none" text-anchor="start" font-size="8">V-</text>
+  <text x="200" y="214" fill="#f3f0e7" stroke="none" text-anchor="start" font-size="10">G = 1 + R2 / R1</text>
+</svg>
