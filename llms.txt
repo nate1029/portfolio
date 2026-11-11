@@ -1,0 +1,41 @@
+# Naiteek Choksi
+
+> Electronics engineer from Vadodara, India, building embedded and IoT devices with AI on top. Final-year B.E. Electronics & Communication at GTU (SVIT, Vasad), graduating 2027. Looking for embedded / IoT / automation roles that mix hardware with applied AI.
+
+Contact: naiteekchoksi@gmail.com
+LinkedIn: https://www.linkedin.com/in/naiteek-choksi-7205b2227/
+GitHub: https://github.com/nate1029
+
+## Pages
+
+- [Home](https://naiteekchoksi.me/): short introduction and recent work
+- [Projects](https://naiteekchoksi.me/work.html): every project with write-up, stack and demo links
+- [Resume](https://naiteekchoksi.me/resume.html): one-page resume, printable to PDF
+- [Certificates](https://naiteekchoksi.me/certs.html): hackathon wins, workshops and certifications
+- [About](https://naiteekchoksi.me/about.html): background and interests
+
+## Projects
+
+- Impulse IDE: desktop IDE for Arduino and IoT boards with an AI agent built in. Compile, upload and serial monitor in one window; an error-memory system reuses past build fixes. Electron, Arduino CLI.
+- Smart SOS Helmet: crash-detection helmet. An MPU6050 senses impact, a 5-second buzzer window lets the rider cancel a false alarm, then the ESP and a companion app send GPS location and an emergency call.
+- Smart Yoga Mat: real-time pose estimation that compares posture against the correct form and gives corrections. MediaPipe, YOLO, Python.
+- Game of Codes: browser game that teaches C++ by making real code the game mechanic. Government-funded, 100+ learners. https://www.gameofcodes.io/
+- NudgeUpp: posture-tracking Android app, built as freelance work and shipped to the Play Store.
+
+## Skills
+
+- Embedded and IoT: Arduino, ESP, Arduino Cloud, sensor integration (MPU6050), C/C++
+- Design and simulation: Cadence, KiCad, EasyEDA, Verilog, MATLAB, computer-network simulation
+- AI / ML: Python, MediaPipe, YOLO; 8+ models trained (pose estimation, healthcare disease prediction, Green AI)
+- Software: JavaScript, Electron, app development and automation
+
+## Experience and recognition
+
+- AI/ML Lead, GDG on Campus SVIT, Vasad (Sep 2025 to present)
+- Founder, AppDice: freelance app development and automation (May 2025 to present)
+- Host, No Doubt podcast: 25+ episodes, live community events
+- Public Relations Chair, Rotary International (Jun 2026 to present)
+- Open-R Hackathon, 1st place, team of 4 (2025)
+- Cadence Chip Layout Workshop, CHARUSAT (2026)
+- Green Skills & AI, Edunet / Shell / AICTE (2025)
+- AI Fluency for Small Businesses, Anthropic / PayPal (2026)

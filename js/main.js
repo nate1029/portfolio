@@ -162,7 +162,7 @@ const io = new IntersectionObserver(
   },
   { threshold: 0.08 }
 );
-document.querySelectorAll(".dept, .ticker").forEach((el) => io.observe(el));
+document.querySelectorAll(".dept").forEach((el) => io.observe(el));
 
 /* ---------- work filter ---------- */
 
@@ -197,16 +197,6 @@ if (canHover && !reduced) {
     });
   });
 }
-
-/* ---------- image fade-in (handles cached + pending) ---------- */
-
-document.querySelectorAll(".shot").forEach((img) => {
-  if (img.complete) {
-    img.naturalWidth ? img.classList.add("loaded") : img.remove();
-  } else {
-    img.addEventListener("load", () => img.classList.add("loaded"));
-  }
-});
 
 /* ---------- resume print ---------- */
 

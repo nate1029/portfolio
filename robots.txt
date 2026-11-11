@@ -1,0 +1,9 @@
+# Everyone welcome, AI crawlers included. Old design archives stay out of the index.
+User-agent: *
+Allow: /
+Disallow: /v1/
+Disallow: /v2/
+Disallow: /v3/
+Disallow: /v4/
+
+Sitemap: https://naiteekchoksi.me/sitemap.xml

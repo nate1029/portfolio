@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-11T17:01:32.379Z",
+        "reason": "Claude triage: hero photo is full-bleed inside its frame by design, not text against a border"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "work.html"
+        ],
+        "createdAt": "2026-11-11T17:01:32.732Z",
+        "reason": "Claude triage: project media fills its frame edge to edge by design"
+      }
+    ]
+  }
+}
