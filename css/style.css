@@ -553,6 +553,45 @@ a.cs-media { text-decoration: none; }
 .cs-media--slider[data-active="1"] .cs-slide[data-slide="0"] { transform: translateX(-100%); opacity: 0; }
 .cs-media--slider[data-active="1"] .cs-slide[data-slide="1"] { transform: translateX(0%); opacity: 1; }
 
+/* YouTube lazy-load thumbnail + play button */
+.yt-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yt-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.yt-play {
+  position: relative;
+  z-index: 1;
+  width: 68px;
+  height: 48px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  pointer-events: none;
+  transition: background 0.15s;
+}
+.yt-thumb:hover .yt-play,
+.yt-thumb:focus-visible .yt-play { background: #c00; }
+
 /* YouTube iframe wrapper fills the slide */
 .cs-yt-wrap {
   position: absolute;
