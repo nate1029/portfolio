@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="2d859d3a-fdac-441a-a37e-69e68d2ca7e6"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Projects | Naiteek Choksi</title>
+  <meta name="description" content="Embedded, IoT and AI projects by Naiteek Choksi: Impulse IDE for Arduino, a crash-detecting Smart SOS Helmet, a pose-checking Smart Yoga Mat and the government-funded Game of Codes.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Naiteek Choksi">
+  <meta property="og:title" content="Projects | Naiteek Choksi">
+  <meta property="og:description" content="Embedded, IoT and AI projects by Naiteek Choksi: Impulse IDE for Arduino, a crash-detecting Smart SOS Helmet, a pose-checking Smart Yoga Mat and the government-funded Game of Codes.">
+  <meta property="og:url" content="https://naiteekchoksi.me/projects.html">
+  <meta property="og:image" content="https://naiteekchoksi.me/images/profilejpeg.webp">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://naiteekchoksi.me/projects.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.dataset.theme=localStorage.theme||"dark"</script>
+</head>
+<body>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">NAITEEK<sup>®</sup></a>
+    <nav aria-label="Site">
+      <a href="index.html">home</a>
+      <a href="projects.html" class="active" aria-current="page">lab</a>
+      <a href="experience.html">experience</a>
+      <a href="about.html">about</a>
+      <a href="resume.html">resume</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">mat</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="dept page-top">
+      <header class="dept-head">
+        <span class="dept-no">work</span>
+        <h1>Things I've built</h1>
+        <p class="dept-tag">the best one is myself.</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filter work">
+        <button class="filter active" data-filter="all">all</button>
+        <button class="filter" data-filter="software">software</button>
+        <button class="filter" data-filter="hardware">hardware</button>
+        <button class="filter" data-filter="freelance">freelance</button>
+        <button class="filter" data-filter="ventures">ventures</button>
+      </div>
+
+      <div class="cs-list" id="work-grid">
+
+        <article class="cs" id="impulse" data-tags="software hardware">
+          <div class="cs-media cs-media--slider" id="impulse-media">
+            <!-- Slide 0: YouTube video -->
+            <div class="cs-slide" data-slide="0">
+              <div id="impulse-yt" class="cs-yt-wrap" data-video-id="kYRS4bwMa9A"></div>
+            </div>
+            <!-- Slide 1: screenshot -->
+            <div class="cs-slide" data-slide="1">
+              <img class="shot contain" loading="lazy" decoding="async" src="images/impulse.webp" alt="Impulse IDE" onerror="this.remove()">
+              <span class="media-note">drop images/impulse.webp</span>
+            </div>
+            <!-- Nav dots -->
+            <div class="cs-dots" aria-hidden="true">
+              <button class="cs-dot active" data-target="0" tabindex="-1"></button>
+              <button class="cs-dot" data-target="1" tabindex="-1"></button>
+            </div>
+            <!-- Prev / Next arrows -->
+            <button class="cs-arrow cs-arrow--prev" aria-label="Previous slide">&#8249;</button>
+            <button class="cs-arrow cs-arrow--next" aria-label="Next slide">&#8250;</button>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">embedded tooling · self-built</span>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://www.youtube.com/watch?v=kYRS4bwMa9A" target="_blank" rel="noopener">video ↗</a>
+                <a class="tag-pill live" href="https://github.com/nate1029/Impulse" target="_blank" rel="noopener">github ↗</a>
+              </span>
+            </div>
+            <h2>Impulse IDE</h2>
+            <p>Most hardware IDEs treat AI as an afterthought. Impulse is built the other way
+              around &mdash; an AI agent sits at the core, bridging the gap between your code
+              and the hardware directly. Compile, upload, and serial monitor in one place,
+              with an error-memory system that learns from past failures. I built it because
+              my own projects kept getting slowed down by tools that weren&rsquo;t built for
+              this.</p>
+            <p class="stat">Open source &middot; error-memory cuts repeat debug cycles to zero</p>
+            <ul class="chips"><li>Electron</li><li>JavaScript</li><li>Arduino CLI</li><li>AI</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" id="yoga-mat" data-tags="software hardware">
+          <a class="cs-media" href="https://www.youtube.com/watch?v=bW1IdYT0Mp0" target="_blank" rel="noopener" aria-label="Watch the Smart Yoga Mat video">
+            <img class="shot" loading="lazy" decoding="async" src="https://i.ytimg.com/vi/bW1IdYT0Mp0/hqdefault.jpg" alt="Smart Yoga Mat demo" onerror="this.remove()">
+            <span class="media-note">watch the video</span>
+          </a>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">ai/ml · computer vision</span>
+              <a class="tag-pill live" href="https://www.youtube.com/watch?v=bW1IdYT0Mp0" target="_blank" rel="noopener">video ↗</a>
+            </div>
+            <h2>Smart Yoga Mat</h2>
+            <p>Yoga apps want you staring at a screen, which defeats the point. This one
+              watches instead: pose estimation tracks your body, compares it against the
+              correct posture, and tells you what to fix in real time &mdash; so the phone
+              stays out of the practice. Built custom hardware with an ESP32-CAM module
+              as the vision input, so the whole thing runs standalone.</p>
+            <p class="stat">Custom hardware &middot; runs fully standalone on ESP32-CAM</p>
+            <ul class="chips"><li>MediaPipe</li><li>YOLO</li><li>Python</li><li>ESP32-CAM</li><li>pose estimation</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" id="game-of-codes" data-tags="software">
+          <div class="cs-media">
+            <img class="shot" loading="lazy" decoding="async" src="images/gameofcodes.webp" alt="Game of Codes" onerror="this.remove()">
+            <span class="media-note">drop images/gameofcodes.webp</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">software · live</span>
+              <a class="tag-pill live" href="https://www.gameofcodes.io/" target="_blank" rel="noopener">visit ↗</a>
+            </div>
+            <h2>Game of Codes</h2>
+            <p>A game that teaches kids to code by making code the actual mechanic — not a
+              lesson, not a tutorial, just a story you can only move forward by writing real
+              logic. Built for the age where attention is the scarce resource.</p>
+            <p class="stat">Government-funded &middot; 100+ learners</p>
+            <ul class="chips"><li>C++</li><li>web</li><li>game</li><li>edtech</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="freelance">
+          <div class="cs-media">
+            <img class="shot contain" loading="lazy" decoding="async" src="images/nudgeupp.webp" alt="NudgeUpp" onerror="this.remove()">
+            <span class="media-note">drop images/nudgeupp.webp</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">freelance · app</span>
+              <a class="tag-pill live" href="https://play.google.com/store/apps/details?id=app.nudgeup.android&pcampaignid=web_share" target="_blank" rel="noopener">play store ↗</a>
+            </div>
+            <h2>NudgeUpp</h2>
+            <p>A posture-tracking app that monitors how you sit and stand throughout the day —
+              built to fix text neck before it becomes a spine problem. Your phone already
+              knows you're slouching. Now it tells you.</p>
+            <ul class="chips"><li>mobile</li><li>health</li><li>freelance</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" id="sos-helmet" data-tags="hardware">
+          <div class="cs-media cs-media--slider" id="helmet-media">
+            <!-- Slide 0: YouTube video -->
+            <div class="cs-slide" data-slide="0">
+              <div id="helmet-yt" class="cs-yt-wrap" data-video-id="tb1Q5e-UGhs"></div>
+            </div>
+            <!-- Slide 1: photo -->
+            <div class="cs-slide" data-slide="1">
+              <img class="shot" loading="lazy" decoding="async" src="images/sos-helmet.webp" alt="Smart SOS Helmet" onerror="this.remove()">
+              <span class="media-note">drop images/sos-helmet.webp</span>
+            </div>
+            <!-- Nav dots -->
+            <div class="cs-dots" aria-hidden="true">
+              <button class="cs-dot active" data-target="0" tabindex="-1"></button>
+              <button class="cs-dot" data-target="1" tabindex="-1"></button>
+            </div>
+            <!-- Prev / Next arrows -->
+            <button class="cs-arrow cs-arrow--prev" aria-label="Previous slide">&#8249;</button>
+            <button class="cs-arrow cs-arrow--next" aria-label="Next slide">&#8250;</button>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">hardware · embedded</span>
+              <a class="tag-pill live" href="https://www.youtube.com/watch?v=tb1Q5e-UGhs" target="_blank" rel="noopener">video ↗</a>
+            </div>
+            <h2>Smart SOS Helmet</h2>
+            <p>A crash-detection helmet with a companion app that handles GPS and emergency
+              calls. MPU6050 reads the impact; a buzzer fires for 5 seconds giving the rider
+              a pushbutton window to cancel a false alarm — if no one presses it, the ESP
+              confirms the crash and sends SOS automatically. A hard hat for genuinely hard
+              problems, and exactly why Impulse exists.</p>
+            <ul class="chips"><li>hardware</li><li>embedded</li><li>MPU6050</li><li>IoT</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="ventures">
+          <div class="cs-media">
+            <img class="shot contain" loading="lazy" decoding="async" src="images/nodoubt.webp" alt="No Doubt podcast" onerror="this.remove()">
+            <span class="media-note">drop images/nodoubt.webp</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">ventures · podcast</span>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://youtube.com/@nodoubtspodcast" target="_blank" rel="noopener">youtube ↗</a>
+                <a class="tag-pill live" href="https://www.instagram.com/nodoubtpodcast/" target="_blank" rel="noopener">instagram ↗</a>
+              </span>
+            </div>
+            <h2>No Doubt — the podcast</h2>
+            <p>Conversations that connect people across the business ecosystem — the belief
+              being: the more people you bring into the room, the more others are inspired to
+              chase their own thing. It has grown past the feed too, with live community
+              events.</p>
+            <p class="stat">25+ episodes &middot; 1.5k+ views on recent ones</p>
+            <ul class="chips"><li>podcast</li><li>hosting</li><li>audio + video</li></ul>
+          </div>
+        </article>
+
+        <article class="cs" data-tags="ventures">
+          <div class="cs-media">
+            <img class="shot" loading="lazy" decoding="async" src="images/metherium.webp" alt="Metherium" onerror="this.remove()">
+            <span class="media-note">drop images/metherium.webp</span>
+          </div>
+          <div class="cs-body">
+            <div class="card-top">
+              <span class="entry-no">ventures · brand</span>
+              <span style="display:inline-flex; gap:6px">
+                <a class="tag-pill live" href="https://metherium.studio/" target="_blank" rel="noopener">visit ↗</a>
+                <a class="tag-pill live" href="https://www.instagram.com/metherium_official/" target="_blank" rel="noopener">instagram ↗</a>
+              </span>
+            </div>
+            <h2>Metherium</h2>
+            <p>A design and branding studio that helps brands build real connection with their
+              audience — identities and visuals that market, not just look good in a mockup.
+              Stickers are one way in: physical, shareable, and impossible to ignore.</p>
+            <ul class="chips"><li>branding</li><li>design</li><li>ecommerce</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-small">
+    <div class="footer-row">
+      <span>© 2026 Naiteek · built by hand, no template</span>
+      <span class="footer-links">
+        <a href="https://www.linkedin.com/in/naiteek-choksi-7205b2227/" target="_blank" rel="noopener">linkedin</a> &middot;
+        <a href="https://github.com/nate1029" target="_blank" rel="noopener">github</a> &middot;
+        <a href="mailto:naiteekchoksi@gmail.com">naiteekchoksi@gmail.com</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/impulse-slider.js"></script>
+</body>
+</html>

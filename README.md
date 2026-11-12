@@ -10,9 +10,9 @@ npx serve -l 5050 .
 
 ## Pages
 
-- **index.html** — hero, one-line proof strip, three project cards deep-linked into Work.
-- **work.html** — project cards, filterable by software / hardware / freelance / ventures.
-- **certs.html** — hackathons and recognition.
+- **index.html** — hero, one-line proof strip, three project cards deep-linked into Projects.
+- **projects.html** — project cards, filterable by software / hardware / freelance / ventures.
+- **experience.html** — community roles, hackathons and recognition.
 - **about.html** — the story.
 - **resume.html** — one-pager with print stylesheet; "download pdf" uses `window.print()`.
   Phone number is injected only at print time (see end of `js/main.js`), never shown on the web page.
