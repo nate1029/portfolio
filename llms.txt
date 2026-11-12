@@ -18,7 +18,7 @@ GitHub: https://github.com/nate1029
 
 - Impulse IDE: desktop IDE for Arduino and IoT boards with an AI agent built in. Compile, upload and serial monitor in one window; an error-memory system reuses past build fixes. Electron, Arduino CLI.
 - Smart SOS Helmet: crash-detection helmet. An MPU6050 senses impact, a 5-second buzzer window lets the rider cancel a false alarm, then the ESP and a companion app send GPS location and an emergency call.
-- Smart Yoga Mat: real-time pose estimation that compares posture against the correct form and gives corrections. MediaPipe, YOLO, Python.
+- Smart Yoga Mat: real-time pose estimation that compares posture against the correct form and gives corrections. Custom hardware with ESP32-CAM as standalone vision module. MediaPipe, YOLO, Python.
 - Game of Codes: browser game that teaches C++ by making real code the game mechanic. Government-funded, 100+ learners. https://www.gameofcodes.io/
 - NudgeUpp: posture-tracking Android app, built as freelance work and shipped to the Play Store.
 
@@ -31,11 +31,12 @@ GitHub: https://github.com/nate1029
 
 ## Experience and recognition
 
-- AI/ML Lead, GDG on Campus SVIT, Vasad (Sep 2025 to present)
+- AI/ML Lead, GDG on Campus SVIT, Vasad (Sep 2025 to present); organized 20+ tech events and hackathons
+- Volunteer, GDG Baroda & AWS Community Vadodara: community days, fests, developer meetups; podcast host for AWS Vadodara
 - Founder, AppDice: freelance app development and automation (May 2025 to present)
 - Host, No Doubt podcast: 25+ episodes, live community events
 - Public Relations Chair, Rotary International (Jun 2026 to present)
-- Open-R Hackathon, 1st place, team of 4 (2025)
+- 2× national hackathon winner: Open-R Hackathon 1st place (2025), plus one more
 - Cadence Chip Layout Workshop, CHARUSAT (2026)
 - Green Skills & AI, Edunet / Shell / AICTE (2025)
 - AI Fluency for Small Businesses, Anthropic / PayPal (2026)
