@@ -9,9 +9,9 @@ GitHub: https://github.com/nate1029
 ## Pages
 
 - [Home](https://naiteekchoksi.me/): short introduction and recent work
-- [Projects](https://naiteekchoksi.me/work.html): every project with write-up, stack and demo links
+- [Projects](https://naiteekchoksi.me/projects.html): every project with write-up, stack and demo links
 - [Resume](https://naiteekchoksi.me/resume.html): one-page resume, printable to PDF
-- [Certificates](https://naiteekchoksi.me/certs.html): hackathon wins, workshops and certifications
+- [Experience](https://naiteekchoksi.me/experience.html): community roles, hackathon wins, workshops and certifications
 - [About](https://naiteekchoksi.me/about.html): background and interests
 
 ## Projects

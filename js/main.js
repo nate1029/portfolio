@@ -31,14 +31,14 @@ if (themeBtn) {
 // Shown only in mat theme (CSS). [file, link, width px]
 // Order alternates project drawing / general electronics so every page mixes both.
 const BLUEPRINTS = [
-  ["helmet", "work.html#sos-helmet", 400],
-  ["esp32", "work.html#impulse", 220],
-  ["schematic", "work.html#sos-helmet", 360],
-  ["i2c", "work.html#sos-helmet", 340],
-  ["board", "work.html#impulse", 340],
-  ["opamp", "work.html", 290],
-  ["pose", "work.html#yoga-mat", 250],
-  ["imu", "work.html#sos-helmet", 240],
+  ["helmet", "projects.html#sos-helmet", 400],
+  ["esp32", "projects.html#impulse", 220],
+  ["schematic", "projects.html#sos-helmet", 360],
+  ["i2c", "projects.html#sos-helmet", 340],
+  ["board", "projects.html#impulse", 340],
+  ["opamp", "projects.html", 290],
+  ["pose", "projects.html#yoga-mat", 250],
+  ["imu", "projects.html#sos-helmet", 240],
 ];
 const pageIdx = Math.max(0, [...document.querySelectorAll(".topbar nav a")]
   .findIndex((a) => a.classList.contains("active")));

@@ -122,8 +122,8 @@ main, footer { position: relative; z-index: 1; }
 main, main > *, footer { pointer-events: none; }
 main > * > *, footer > * { pointer-events: auto; }
 /* layout wrappers: their gaps pass through too, their items still catch */
-.cover-photo, .cert-grid, .cs-list, .proof-grid, .about-intro, .footer-row { pointer-events: none; }
-:is(.cert-grid, .cs-list, .proof-grid, .about-intro, .footer-row) > * { pointer-events: auto; }
+.cover-photo, .cert-grid, .role-grid, .cs-list, .proof-grid, .about-intro, .footer-row { pointer-events: none; }
+:is(.cert-grid, .role-grid, .cs-list, .proof-grid, .about-intro, .footer-row) > * { pointer-events: auto; }
 
 /* ---------- top bar ---------- */
 
@@ -264,6 +264,42 @@ main > * > *, footer > * { pointer-events: auto; }
   font-size: 12px;
   color: var(--muted);
   margin-top: 14px;
+}
+
+/* drawing title block: one cell per credential */
+.spec-strip {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 26px;
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+}
+
+.spec-strip li {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  color: var(--muted);
+  padding: 10px 12px 11px;
+  border-left: 1.5px solid var(--ink);
+}
+
+.spec-strip li:first-child { border-left: 0; }
+
+.spec-strip b {
+  display: block;
+  font-family: var(--display);
+  font-size: 19px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+  color: var(--blue);
+  margin-bottom: 3px;
 }
 
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -665,6 +701,58 @@ a.cs-media { text-decoration: none; }
 .cs-arrow--prev { left: 8px; }
 .cs-arrow--next { right: 8px; }
 
+/* ---------- roles ---------- */
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+  max-width: 940px;
+  margin-bottom: 48px;
+}
+
+.role-card {
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--shadow);
+  padding: 22px 24px 26px;
+}
+
+.role-kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--blue);
+}
+
+.role-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 8px 0 4px;
+}
+
+.role-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.role-desc { font-size: 14px; color: var(--muted); }
+
+.section-rule {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 0 22px;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid var(--ink);
+  max-width: 940px;
+}
+
 /* ---------- certs ---------- */
 
 .cert-grid {
@@ -988,7 +1076,7 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
   .filter { flex: none; padding: 10px 16px; }
 
   /* cards: lighter shadow, press feedback */
-  .proof, .cs, .cert, .resume, .about-photo { box-shadow: 4px 4px 0 var(--shadow); }
+  .proof, .cs, .cert, .role-card, .resume, .about-photo { box-shadow: 4px 4px 0 var(--shadow); }
   .proof:active, .cs:active, .btn:active, .filter:active { transform: scale(0.98); }
   .btn, .filter { transition: transform 0.12s ease; }
 
@@ -1001,6 +1089,16 @@ footer { padding: 90px 6vw 34px; overflow: hidden; }
   .cs-body { padding: 16px 18px 20px; }
   .cs-body > p { font-size: 15px; }
   .cs h2 { font-size: 21px; margin-bottom: 10px; }
+
+  .spec-strip { grid-template-columns: 1fr 1fr; margin-top: 20px; }
+  .spec-strip li:nth-child(odd) { border-left: 0; }
+  .spec-strip li:nth-child(n+3) { border-top: 1.5px solid var(--ink); }
+
+  /* roles */
+  .role-grid { grid-template-columns: 1fr; gap: 14px; margin-bottom: 36px; }
+  .role-card { padding: 16px 18px 20px; }
+  .role-title { font-size: 16px; }
+  .section-rule { font-size: 18px; }
 
   /* certs */
   .cert-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
